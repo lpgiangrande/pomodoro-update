@@ -25,7 +25,6 @@ function startTimer(duration = 25 * 60) {
       if (timeLeft <= 0) {
         clearInterval(timerId);
         timerId = null;
-        //alert('Time is up!');
         alarmSound.play(); 
       }
     }, 1000);
@@ -69,20 +68,3 @@ startButton.addEventListener('click', () => {
 resetButton.addEventListener('click', resetTimer);
 stopButton.addEventListener('click', stopAlarm);
 pauseButton.addEventListener('click', startPauseTimer);
-
-
-function changeTheme() {
-    // get the document style sheet
-    const styleSheet = document.styleSheets[0];
-    
-    // find the :root selector rule
-    const rootRule = styleSheet.cssRules[0];
-    
-    // change the values of the variables
-    rootRule.style.setProperty('--bg', '#505168');
-    rootRule.style.setProperty('--timer-bg', '#DCC48E');
-    rootRule.style.setProperty('--bright-green', '#B3C0A4');
-    rootRule.style.setProperty('--pink', '#FFB6C1');
-    rootRule.style.setProperty('--texts', '#27233A');
-    rootRule.style.setProperty('--texts-rgb', '47, 79, 79');
-  }
