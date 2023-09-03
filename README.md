@@ -1,5 +1,5 @@
 ## Pomodoro timer :
 
-Live site (https://lpgiangrande.github.io/pomodoro/)
+Live site (https://stellar-pegasus-b9915b.netlify.app/)
 
 ![screenshot](assets/pomodoro-timer.png)
